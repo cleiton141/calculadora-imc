@@ -1,0 +1,170 @@
+/* Adicione estas classes ao seu arquivo CSS existente */
+
+/* Tabela de padrões IMC */
+.tabela-padroes {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.tabela-padroes h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.tabela-imc {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85em;
+}
+
+.tabela-imc th,
+.tabela-imc td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela-imc th {
+    background-color: var(--primary-color);
+    color: rgb(8, 8, 8);
+    font-weight: 600;
+    text-align: center;
+}
+
+.tabela-imc tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Cores condicionais para a tabela de referência */
+.abaixo-peso { background-color: #fff3cd; }
+.peso-normal { background-color: #d4edda; }
+.sobrepeso { background-color: #fff3cd; }
+.obesidade-1 { background-color: #ffe5b4; }
+.obesidade-2 { background-color: #ffcc80; }
+.obesidade-3 { background-color: #ff9800; }
+
+/* Histórico */
+.historico {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+.historico-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.historico-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.btn-limpar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s;
+}
+
+.btn-limpar:hover {
+    background-color: #c82333;
+}
+
+.historico-vazio {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 20px;
+}
+
+.lista-historico {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.item-historico {
+    background: #f8f9fa;
+    border-left: 4px solid var(--primary-color);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.item-historico:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-historico {
+    flex: 1;
+}
+
+.info-historico strong {
+    color: var(--primary-color);
+    font-size: 1.1em;
+}
+
+.info-historico div {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.info-historico .categoria {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.categoria-abaxo-peso { background: #fff3cd; color: #856404; }
+.categoria-peso-normal { background: #d4edda; color: #155724; }
+.categoria-sobrepeso { background: #fff3cd; color: #856404; }
+.categoria-obesidade-1 { background: #ffe5b4; color: #856404; }
+.categoria-obesidade-2 { background: #ffcc80; color: #856404; }
+.categoria-obesidade-3 { background: #ff9800; color: #fff; }
+
+.btn-remover {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s;
+}
+
+.btn-remover:hover {
+    background: #c82333;
+}
+
+/* Highlight da categoria atual no resultado */
+.resultado-highlight {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}

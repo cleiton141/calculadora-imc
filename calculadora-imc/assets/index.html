@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/calculator_imc.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Calcule seu IMC</h1>
+        
+        <!-- Tabela de padrões IMC -->
+        <div class="tabela-padroes">
+            <h3>Tabela de Referência IMC</h3>
+            <table class="tabela-imc">
+                <thead>
+                    <tr>
+                        <th>Classificação</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="abaixo-peso"><td>Abaixo do Peso</td><td>&lt; 18.5</td></tr>
+                    <tr class="peso-normal"><td>Peso Normal</td><td>18.5 - 24.9</td></tr>
+                    <tr class="sobrepeso"><td>Sobrepeso</td><td>25 - 29.9</td></tr>
+                    <tr class="obesidade-1"><td>Obesidade Grau 1</td><td>30 - 34.9</td></tr>
+                    <tr class="obesidade-2"><td>Obesidade Grau 2</td><td>35 - 39.9</td></tr>
+                    <tr class="obesidade-3"><td>Obesidade Grau 3</td><td>≥ 40</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <form action="/" id="formulario" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="text" id="peso" name="peso" placeholder="Ex: 70.5" required>
+
+            <label for="altura">Altura (m):</label>
+            <input type="text" id="altura" name="altura" placeholder="Ex: 1.75" required>
+
+            <button type="submit">Calcular IMC</button>
+        </form>
+
+        <div id="resultado"></div>
+        
+        <!-- Histórico de cálculos -->
+        <div class="historico">
+            <div class="historico-header">
+                <h3>Histórico de Cálculos</h3>
+                <button id="btnLimparHistorico" class="btn-limpar">Limpar Histórico</button>
+            </div>
+            <div id="listaHistorico">
+                <p class="historico-vazio">Nenhum cálculo realizado ainda.</p>
+            </div>
+        </div>
+    </section>
+  
+    <script src="js/calculator_imc.js"></script>
+</body>
+</html>
